@@ -3,28 +3,84 @@
   
    <head>
      <meta charset="utf-8">
-     <title>Jys's Favorite Music</title>
+     <link rel="stylesheet" href="css/style.css">
+     <title>About JYS</title> 
    </head>
+       <style>
+  .gnb-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    background: #E6E6FA;
+  }  
 
+  .gnb-menu a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 12px;
+  } 
 
+  .gnb-menu ab {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 12px;
+  } 
+
+  .gnb-menu a::after {
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 0;
+    height:4px;
+    background: #f1c40f;
+    transition: all .5s ease-out;
+  }
+
+  .gnb-menu a:hover::after {
+    width:100%;
+  }
+
+          body {
+             background: #E6E6FA;
+             }   
+       </style>
+          
+          
   <body>
-  	  <ul>
-  	 	<li>Html</li>
-  		<li>CSS</li>
-  		<li>JavaScript</li>
-  	  </ul>
-  	
-  	  <ol>
-  	  	<li><strong>Favorite Music</strong></li>
-  	  	<li>Favorite Actor</li>
-  	  	<li>Favorite Sports</li>
-  	  </ol>
+      <nav class="gnb-menu">
+      <a href="https://jys9011.github.io/YSJeong/index.html">Home</a>
+      <ab href="https://jys9011.github.io/YSJeong/h2.html">About</ab>
+      <a href="#section-contact">Contact</a>
+      </nav>
 
-  	<h1> Jys의 깃허브 홈페이지  </h1>
-    <img src = "Charlie.JPG" width="235" height="250">
-    <p style="margin-top:45px;">Hello, everyone.</p><p>This is Jys's website.</p><p>Welcome to my new world.</p><p>Please enjoy it.</p>
-    <p>Tell me what you know about.</p>
-    <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target="_blank" title="html5 specification">HTML</a> is the standard markup language for creating web pages and web applications.
+    
+    <div style="text-align: Center">
+    <p><img src="run1.jpg" width="300px" height="300px">
+    <img src="run2.jpg" width="300px" height="300px">
+    <img src="run3.jpg" width="300px" height="300px">
+    <img src="run4.jpg" width="300px" height="300px"><br>
+    저는 달리기를 사랑하고<br><br><br></p>
+    <p><img src="hike1.jpg" width="300px" height="300px">
+    <img src="hike2.jpg" width="300px" height="300px"><br>
+    등산을 사랑합니다<br></p>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans+Condensed:wght@300&family=Oswald&display=swap" rel="stylesheet">
+  <style>
+  *{ font-family: 'Comforter', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+     font-family: 'Oswald', sans-serif;
+   }  
+  </style>
+
+
   </body>
 
 </html>  
