@@ -1,0 +1,43 @@
+.gnb-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    background: #E6E6FA;
+  }  
+
+  .gnb-menu a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 12px;
+  } 
+
+  .gnb-menu ab {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 6px 12px;
+  } 
+
+  .gnb-menu a::after {
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 0;
+    height:4px;
+    background: #f1c40f;
+    transition: all .5s ease-out;
+  }
+
+  .gnb-menu a:hover::after {
+    width:100%;
+  }
+
+   body {
+    background: #E6E6FA;
+  }   
